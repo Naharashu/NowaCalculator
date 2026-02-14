@@ -13,6 +13,7 @@
   "license": "MPL-2.0",
   "type": "commonjs",
   "dependencies": {
+    "@materializecss/materialize": "^2.3.2",
     "electrom": "34.0.2"
   },
   "devDependencies": {

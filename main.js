@@ -87,6 +87,9 @@ function addMno() {
 function calcul() {
   try {
     let x = input.value
+    if(x == ' ') {
+      input.value = '0';
+    }
     let status = "ok"
     x = x.replace(/√/g, 'Math.sqrt');
     x = x.replace(/\^2/g, '**2');

@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
   <meta name="description" content="A simple online calculator">
-  <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <input id="display" type="text" class="inpt" placeholder="0">
+  <input id="display" type="text" class="uk-input" placeholder="0">
   <div class="btns">
-    <button onclick="del()" id="delC">C</button>
-    <button id="one" onclick="addOne()">1</button>
-    <button onclick="addTwo()" id="two">2</button>
-    <button onclick="addThree()" id="three">3</button>
-    <button onclick="addPlus()" id="plus">+</button>
-    <button onclick="addFour()" id="four">4</button>
-    <button onclick="addFive()" id="five">5</button>
-    <button onclick="addSix()" id="six">6</button>
-    <button onclick="addMinus()" id="minus">-</button>
-    <button onclick="addSeven()" id="seven">7</button>
-    <button onclick="addEight()" id="eighth">8</button>
-    <button onclick="addNine()" id="nine">9</button>
-    <button onclick="addMno()" id="mno">*</button>
-    <button onclick="addDil()" id="dil">/</button>
-    <button onclick="addZero()" class="zero">0</button>
-    <button onclick="calcul()" id="pi">π</button>
-    <button onclick="addT()" id="T">(</button>
-    <button onclick="addO()" id="O">)</button>
-    <button onclick="addDot()" id="dot">.</button>
-    <button onclick="calcul()" id="pi">=</button>
+    <button onclick="del()" id="delC" class="uk-button uk-button-secondary">C</button>
+    <button id="one" onclick="addOne()" class="uk-button uk-button-primary">1</button>
+    <button onclick="addTwo()" id="two" class="uk-button uk-button-primary">2</button>
+    <button onclick="addThree()" id="three" class="uk-button uk-button-primary">3</button>
+    <button onclick="addPlus()" id="plus" class="uk-button uk-button-primary">+</button>
+    <button onclick="addFour()" id="four" class="uk-button uk-button-primary">4</button>
+    <button onclick="addFive()" id="five" class="uk-button uk-button-primary">5</button>
+    <button onclick="addSix()" id="six" class="uk-button uk-button-primary">6</button>
+    <button onclick="addMinus()" id="minus" class="uk-button uk-button-primary">-</button>
+    <button onclick="addSeven()" id="seven" class="uk-button uk-button-primary">7</button>
+    <button onclick="addEight()" id="eighth" class="uk-button uk-button-primary">8</button>
+    <button onclick="addNine()" id="nine" class="uk-button uk-button-primary">9</button>
+    <button onclick="addMno()" id="mno" class="uk-button uk-button-primary">*</button>
+    <button onclick="addDil()" id="dil" class="uk-button uk-button-primary">/</button>
+    <button onclick="addZero()" id="zero" class="uk-button uk-button-primary">0</button>
+    <button onclick="addPi()" id="pi" class="uk-button uk-button-primary">π</button>
+    <button onclick="addT()" id="T" class="uk-button uk-button-primary">(</button>
+    <button onclick="addO()" id="O" class="uk-button uk-button-primary">)</button>
+    <button onclick="addDot()" id="dot" class="uk-button uk-button-primary">.</button>
+    <button onclick="calcul()" id="calcul" class="uk-button uk-button-primary">=</button>
   </div>
-  
-  <div style="" class="addon">
+
+  <!--
+  <div style="visibility: hidden;" class="addon">
     <p>Algebra addon</p>
     <button onclick="addKor2()" id="kor2">√</button>
     <button onclick="addKor3()" id="kor3">∛</button>
@@ -44,9 +48,9 @@
     <button onclick="addE()">e</button>
     <button onclick="addLog()">log</button>
   </div>
-  
-  <div class="geometry">
-    
+
+  <div class="geometry" style="visibility: hidden;">
+
     <p>Geometry addon</p>
 
     <button onclick="addSin()" id="sin">sin</button>
@@ -56,15 +60,16 @@
     <button onclick="addAsin()">asin</button>
     <button onclick="addAcos()">acos</button>
     <button onclick="addAtan()">atan</button>
-    <button onclick="addSinH()" >sinh</button>
+    <button onclick="addSinH()">sinh</button>
     <button onclick="addCosH()">cosh</button>
     <button onclick="addTanH()">tanh</button>
   </div>
+-->
 
-  
-  
-  
+
+
   <script src="main.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
